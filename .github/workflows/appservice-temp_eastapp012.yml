@@ -1,7 +1,7 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: Build and deploy ASP app to Azure Web App - Eastapp012
+name: Build and deploy ASP app to Azure Web App - EastApp012
 
 on:
   push:
@@ -55,15 +55,15 @@ jobs:
       - name: Login to Azure
         uses: azure/login@v2
         with:
-          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_12FACC102D784E20A0D643613F04B2F4 }}
-          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_F4CE3E30FE2545FAAC13613CFBAC3C04 }}
-          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_BC0A2F77615C414AA0A1B5AF089820AC }}
+          client-id: ${{ secrets.AZUREAPPSERVICE_CLIENTID_A1D4113E6C35432192AFD1844F19CB38 }}
+          tenant-id: ${{ secrets.AZUREAPPSERVICE_TENANTID_80170AE60147418E80DF4CDFD0014544 }}
+          subscription-id: ${{ secrets.AZUREAPPSERVICE_SUBSCRIPTIONID_D8C10D171E61478A8B46FC63D409A4D0 }}
 
       - name: Deploy to Azure Web App
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v3
         with:
-          app-name: 'Eastapp012'
+          app-name: 'EastApp012'
           slot-name: 'Production'
           package: .
           
